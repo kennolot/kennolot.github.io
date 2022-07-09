@@ -1,0 +1,260 @@
+* {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #add8e6;
+
+  background-image: url("img/waves.png");
+  background-position: 0px 400px, center;
+  background-repeat: repeat-x;
+}
+
+.br-custom-large {
+  display: block;
+  margin-bottom: 20rem;
+}
+
+.blue-back {
+  top: 500px;
+  /* this is a hacky fix, no better solution available. */
+  height: 2300px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, #1ec7fa, #353935);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home,
+#about,
+#treasures,
+#contact {
+  display: inline-block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #049ac7;
+  color: white;
+}
+
+.logo {
+  margin: 1rem;
+}
+
+.logo img {
+  width: 32px;
+  height: auto;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  color: darkslategray;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.intro-text {
+  position: relative;
+  text-align: center;
+  margin-top: 8vh;
+}
+
+.main {
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.main p {
+  color: white;
+  line-height: 1.5rem;
+}
+
+.p1 {
+  font-size: 42px;
+  color: white;
+}
+
+.p2 {
+  font-size: 30px;
+  color: white;
+}
+
+ion-icon {
+  font-size: 40px;
+}
+
+.social-icon {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  /* responsive navbar */
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.purple-fish {
+  position: relative;
+  width: 10rem;
+  height: auto;
+  float: right;
+  right: 50%;
+  margin-top: 15%;
+}
+
+.angler-fish {
+  position: relative;
+  width: 5rem;
+  height: auto;
+  float: right;
+  margin-top: 10%;
+  right: 60%;
+  padding: 0;
+}
+
+.angler-fish2 {
+  position: relative;
+  width: 5rem;
+  height: auto;
+  float: right;
+  margin-top: 10%;
+  right: 70%;
+  padding: 0;
+}
+
+.angler-fish3 {
+  transform: scaleX(-1);
+  position: relative;
+  width: 5rem;
+  height: auto;
+  float: right;
+  margin-top: 30%;
+  right: 20%;
+  padding: 0;
+}
+
+.small-fish {
+  position: relative;
+  width: 15rem;
+  height: auto;
+  float: right;
+  right: 11%;
+  padding: 0;
+}
+
+.shark {
+  transform: scaleX(-1);
+  position: relative;
+  width: 15rem;
+  height: auto;
+  float: right;
+  margin-top: 15%;
+  right: 55%;
+  padding: 0;
+}
+
+.shark2 {
+  position: absolute;
+  width: 15rem;
+  height: auto;
+  float: right;
+  margin-top: 210px;
+  right: 30%;
+  padding: 0;
+}
+
+.jellyfish1 {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  float: left;
+  left: 50%;
+  margin-top: 1%;
+  padding: 0;
+}
+
+.seaweed {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin-left: 16%;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #334546;
+  padding: 10px;
+  color: white;
+}
