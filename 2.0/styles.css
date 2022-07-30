@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("fonts/coolvetica.otf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Coolvetica";
+  font-size: 20px;
+  background-color: #131713;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  pointer-events: none;
+}
+
+.nav-container a {
+  color: #9ee48b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+header nav {
+  float: right;
+}
+
+header ul {
+  display: flex;
+}
+
+header a {
+  display: block;
+  padding: 0 1em;
+}
+
+p {
+  margin-right: 50px;
+  line-height: 130%;
+}
+
+#logo {
+  width: 35px;
+  height: 35px;
+  margin-top: -5px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: #9ee48b;
+}
+
+.image-container h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons img {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  position: relative;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+#colored-dots {
+  position: absolute;
+  right: 0;
+  height: 8rem;
+  width: 8rem;
+}
+
+.description,
+.portfolio,
+.contact {
+  margin-left: 5%;
+}
+
+.description h1,
+.portfolio h1,
+.contact h1 {
+  font-size: 50px;
+  color: #9ee48b;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio h3 {
+  color: #9ee48b;
+}
+
+.description p,
+.portfolio p,
+.contact p {
+  color: #9ee48b;
+}
+
+#about h1,
+#projects h1,
+#contact h1 {
+  margin-top: 15vh;
+  background-color: #162819;
+}
+
+.portfolio a p {
+  display: inline-block;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  color: #9ee48b;
+}
+
+@media only screen and (min-width: 800px) {
+  #hero-mobile {
+    display: none;
+  }
+  body {
+    background: url("img/hero_image_desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #131713;
+  }
+
+  .image-container h1 {
+    margin-top: 9rem;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons img {
+    height: 4rem;
+    width: 4rem;
+    display: block;
+    position: relative;
+    margin-top: 13rem;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    padding: 0 1em;
+  }
+
+  #colored-dots {
+    position: absolute;
+    right: 0;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 40rem;
+  }
+
+  #about h1 {
+    margin-top: 60vh;
+  }
+
+  #projects h1,
+  #contact h1 {
+    margin-top: 15vh;
+    background-color: #162819;
+  }
+
+  .portfolio {
+    text-align: left;
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+
+  .portfolio-left {
+    display: grid;
+    place-content: center;
+  }
+  .portfolio-right {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 1145px) {
+  .portfolio-right img {
+    float: right;
+    margin-right: 5rem;
+    width: 65%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1684px) {
+  #about h1 {
+    margin-top: 90vh;
+  }
+
+  #colored-dots {
+    position: absolute;
+    right: 0;
+    height: 8rem;
+    width: 8rem;
+    margin-top: 60rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  body {
+    font-size: 40px;
+  }
+  #logo {
+    width: 60px;
+    height: 60px;
+    margin-top: -5px;
+  }
+  .description p,
+  .portfolio p,
+  .contact p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 3500px) {
+  body {
+    font-size: 60px;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+    margin-top: -5px;
+  }
+  .image-container h1 {
+    font-size: 150px;
+  }
+  .social-icons img {
+    height: 10rem;
+    width: 10rem;
+    padding-top: 80px;
+  }
+
+  .description h1,
+  .portfolio h1,
+  .contact h1 {
+    font-size: 80px;
+  }
+
+  .description p,
+  .portfolio p,
+  .contact p {
+    font-size: 50px;
+  }
+}
